@@ -1,0 +1,40 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "at.modalog.cordova.plugin.cache": {
+      "PACKAGE_NAME": "Br.Guilherme.JoA"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "Br.Guilherme.JoA"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+      "PACKAGE_NAME": "Br.Guilherme.JoA"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "br.guilherme.JoA"
+    },
+    "phonegap-plugin-push": {
+      "ANDROID_SUPPORT_V13_VERSION": "27.+",
+      "FCM_VERSION": "17.0.+",
+      "PACKAGE_NAME": "br.guilherme.JoA"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "Br.Guilherme.JoA"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "br.guilherme.JoA"
+    },
+    "phonegap-plugin-multidex": {
+      "PACKAGE_NAME": "br.guilherme.JoA"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "874718700346",
+    "project_id": "apperitivo-2c312",
+    "storage_bucket": "apperitivo-2c312.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874718700346:android:d4e5e80a518f230f7de603",
+        "android_client_info": {
+          "package_name": "br.guilherme.JoA"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874718700346-ag2fs9bho8dk8d3serg9inlf264q398d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH3uNvqECD7elEc7Eg6BXi41Sl_I8EAaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874718700346-ag2fs9bho8dk8d3serg9inlf264q398d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

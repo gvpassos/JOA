@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="br.guilherme.JoA" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Cache">
+        <param name="android-package" value="at.modalog.cordova.plugin.cache.Cache" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="PushNotification">
+        <param name="android-package" value="com.adobe.phonegap.push.PushPlugin" />
+    </feature>
+    <name>Jornal O Aperitivo</name>
+    <description>
+        Um porre de informações
+    </description>
+    <author email="v.go123@hotmail.com " href="https://jornaloaperitivo.com.br/">
+        Guilherme Veloso Passos
+    </author>
+    <icon src="www/res/drawable-mdpi/ic_launcher.png" />
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon background="www/res/drawable-mdpi/ic_launcher.png" density="mdpi" foreground="www/res/drawable-mdpi/ic_launcher.png" />
+    <icon background="www/res/drawable-hdpi/ic_launcher.png" density="hdpi" foreground="www/res/drawable-hdpi/ic_launcher.png" />
+    <icon background="www/res/drawable-xhdpi/ic_launcher.png" density="xhdpi" foreground="www/res/drawable-xhdpi/ic_launcher.png" />
+    <icon background="www/res/drawable-xxhdpi/ic_launcher.png" density="xxhdpi" foreground="www/res/drawable-xxhdpi/ic_launcher.png" />
+    <icon background="www/res/drawable-xxxhdpi/ic_launcher.png" density="xxxhdpi" foreground="www/res/drawable-xxxhdpi/ic_launcher.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="android-targetSdkVersion" value="19" />
+</widget>

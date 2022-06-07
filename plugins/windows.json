@@ -1,0 +1,31 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "at.modalog.cordova.plugin.cache": {
+      "PACKAGE_NAME": "Jornal O Aperitivo"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "Jornal O Aperitivo"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "Jornal O Aperitivo"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "Jornal O Aperitivo"
+    },
+    "phonegap-plugin-push": {
+      "PACKAGE_NAME": "Jornal O Aperitivo"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "Jornal O Aperitivo"
+    }
+  }
+}

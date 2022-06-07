@@ -1,0 +1,17 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Jornal O Aperitivo",
+  "short_name": "Jornal O Aperitivo",
+  "version": "br.guilherme.JoA",
+  "description": "Um porre de informações",
+  "author": "Guilherme Veloso Passos",
+  "icons": [
+    {
+      "src": "www/res/drawable-mdpi/ic_launcher.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "start_url": "index.html"
+}

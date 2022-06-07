@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="br.guilherme.JoA" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <name>Jornal O Aperitivo</name>
+    <description>
+        Um porre de informações
+    </description>
+    <author email="v.go123@hotmail.com " href="https://jornaloaperitivo.com.br/">
+        Guilherme Veloso Passos
+    </author>
+    <icon src="www/res/drawable-mdpi/ic_launcher.png" />
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <preference name="WindowsToastCapable" value="true" />
+    <preference name="windows-target-min-version" value="10.0.15063.0" />
+    <preference name="Windows.Universal-MinVersion" value="10.0.15063.0" />
+</widget>

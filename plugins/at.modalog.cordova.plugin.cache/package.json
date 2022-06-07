@@ -1,0 +1,61 @@
+{
+  "_from": "git+https://github.com/moderna/cordova-plugin-cache.git",
+  "_id": "cordova-plugin-cache@1.1.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-cache",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/moderna/cordova-plugin-cache.git",
+    "rawSpec": "https://github.com/moderna/cordova-plugin-cache.git",
+    "saveSpec": "git+https://github.com/moderna/cordova-plugin-cache.git",
+    "fetchSpec": "https://github.com/moderna/cordova-plugin-cache.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/moderna/cordova-plugin-cache.git#1e19d94c3a5eb00314b6a08db3f72c43f2f8e090",
+  "_spec": "https://github.com/moderna/cordova-plugin-cache.git",
+  "_where": "D:\\Documents\\NetBeansProjects\\JoA",
+  "author": {
+    "name": "Modern Alchemists OG"
+  },
+  "bugs": {
+    "url": "https://github.com/moderna/cordova-plugin-cache/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "at.modalog.cordova.plugin.cache",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "WebView cache plugin for Cordova that allows to clear the cordova webview cache.",
+  "devDependencies": {},
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/moderna/cordova-plugin-cache#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "ecosystem:phonegap",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-cache",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/moderna/cordova-plugin-cache.git"
+  },
+  "scripts": {},
+  "version": "1.1.0"
+}
