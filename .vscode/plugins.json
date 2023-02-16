@@ -1,0 +1,1 @@
+{"plugins":["at.modalog.cordova.plugin.cache","cordova-plugin-whitelist","cordova-plugin-x-socialsharing","es6-promise-plugin","cordova-plugin-inappbrowser","phonegap-plugin-push","cordova-support-google-services","phonegap-plugin-multidex"]}
