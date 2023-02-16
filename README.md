@@ -8,6 +8,8 @@ depois insiro em uma lista de exibiçao para o usuario poder ter um rapido acess
 
 ![Screenshot](screenshot.png)
 
+<br>
+
 <h3>foto do menu do aplicativo</h3>
 
 ![Screenshot](screenshot_menu.png)
