@@ -13,16 +13,16 @@ const jornalBuscador = "https://jornaloaperitivo.com.br/search?q=";
 ///// Alimentador
 function consulta(){
     $.ajax({
-        url: "http://feeds.feedburner.com/jornaloaperitivo/hkmn",
+        url: "https://www.jornaloaperitivo.com.br/feeds/posts/default",
         type: "GET",
         data: "",
         dataType: "xml",
         cache:false,
         success: function (Feed, textStatus, jqXHR) {
-            //console.log(Feed);
-            entradas = Feed.getElementsByTagName("entry");
+            console.log(Feed);
+            //entradas = Feed.getElementsByTagName("entry");
             for (var c = 0; c < entradas.length; c++) {
-                   //console.log(entradas[c].getElementsByTagName("link")[2].getAttribute("href"));
+                   console.log(entradas[c].getElementsByTagName("link"));
                    var aux = "";
                    if(entradas[c].getElementsByTagName('content').length > 0){
                        aux = entradas[c].getElementsByTagName('content')[0].innerHTML.split("&lt")[0]
@@ -30,7 +30,7 @@ function consulta(){
                 Noticias.push({
                     titulo: entradas[c].getElementsByTagName('title')[0].innerHTML,
                     texto: aux,
-                    link: entradas[c].getElementsByTagName("link")[2].getAttribute("href"),
+                    link: entradas[c].getElementsByTagName("link")[2].innerHTML,
                     id: entradas[c].getElementsByTagName("id")[0].innerHTML,
 
                 });
@@ -38,7 +38,7 @@ function consulta(){
             //Propagandas = JSON.parse(Feed.getElementsByTagName("subtitle")[0].innerHTML);
 
             BancoDeDados.setItem("Noticias", JSON.stringify(Noticias));
-            //BancoDeDados.setItem("Propagandas", Feed.getElementsByTagName("subtitle")[0].innerHTML);
+            BancoDeDados.setItem("Propagandas", Feed.getElementsByTagName("subtitle")[0].innerHTML);
 
             preencherTabela(0,4);
             Feed = null;
@@ -62,25 +62,24 @@ function consulta(){
             );
         } else {
             Noticias = JSON.parse(BancoDeDados.getItem("Noticias"));
-            //Propagandas = JSON.parse(BancoDeDados.getItem("Propagandas"));
+            Propagandas = JSON.parse(BancoDeDados.getItem("Propagandas"));
             preencherTabela(0,4);
 
 
         }
 
     });
-        //window.setInterval(criarPropaganda, 6000);
+        window.setInterval(criarPropaganda, 6000);
 }
 
 function preencherTabela(min,max){
     var string = "";
 
     for (var c = min; c < max; c++) {
-    console.log(Noticias[c].id);
       //corrigir LINK
-      if (Noticias[c].link === undefined)Noticias[c].link = 'https://jornaloaperitivo.com.br/';
+      if (Noticias[c].link === undefined)noticias[c].link = 'https://jornaloaperitivo.com.br/';
       /// corrigir TITULO
-      if (Noticias[c].titulo === undefined)Noticias[c].titulo = 'Jornal O Aperitivo';
+      if (Noticias[c].titulo === undefined)noticias[c].titulo = 'Jornal O Aperitivo';
 
             string += '<div class="card-box"><div class="row">';
         // TITULO
@@ -107,22 +106,22 @@ function preencherTabela(min,max){
               '</a></div></div>';
 
          //Terceira Linha, PROPAGANDA
-        /*var pos = c;
+        var pos = c;
         while (pos > Propagandas.length-1) pos -= Propagandas.length;
         console.log("Propaganda"+pos)
 
         string += '<div class="card" style="background-color:#f2e5b6"><div class="card-wrapper"><div class="row align-items-center"><div class="col-12" style="left:7.5%"><div class="image-wrapper">'+
           '<br><img src="'+ Propagandas[pos].thumb + '" alt="PROPAGANDA" style="width:85%">'+
           '</div></div><div class="col-12"><div class="top-line"><h4 class="card-title mbr-fonts-style display-5"></h4></div></div></div></div></div>';
-            */
+
           $("#noticias").html($("#noticias").html()+string);
           string = "";
           buscarImagem(c);
     }
 
-    //criarPropaganda();
+    criarPropaganda();
 }
-/*
+
 function criarPropaganda() {
     if(Propagandas !== undefined ){
         var aleatorio = parseInt(Math.random()*Propagandas.length);
@@ -130,7 +129,7 @@ function criarPropaganda() {
         $("#Propaganda").attr('onclick', "cordova.InAppBrowser.open(`"+Propagandas[aleatorio].url+",`_system`)");
     }
 }
-*/
+
 function verificaSalvo(indice) {
     if(BancoDeDados.getItem(noticiasSalvas)===null)return true;
     var noticias = JSON.parse(BancoDeDados.getItem(noticiasSalvas));
