@@ -6,9 +6,11 @@ depois insiro em uma lista de exibiçao para o usuario poder ter um rapido acess
 
 
 ![Screenshot](screenshot.png)
+
 foto do tela principal do aplicativo
 
 
 ![Screenshot](screenshot_menu.png)
+
 foto do menu do aplicativo
 
