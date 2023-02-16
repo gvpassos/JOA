@@ -5,5 +5,10 @@ usando o FeedBurner do Google eu recebo um XML de onde obtenho as dados da notic
 depois insiro em uma lista de exibiçao para o usuario poder ter um rapido acesso as noticias
 
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.png | width=100)
+foto do tela principal do aplicativo
+
+
+![Screenshot](screenshot_menu.png | width=100)
+foto do menu do aplicativo
 
